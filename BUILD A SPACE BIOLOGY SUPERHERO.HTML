@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Superhero that faces most of space stresses">
+    <meta name="author" content="Salma El-Sayed">
+    <title> The Versatile</title>
+    <link rel="shortcut icon" type="x-icon" href="img/logo-circle.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="BUILD A SPACE BIOLOGY SUPERHERO.CSS">
+    <script>
+        function OpenVideo() {
+            window.open("nasa.mp4");
+        }
+        function OpenWeb(){
+            var str = document.getElementById("Search").value;
+            if (str == "Travel stresses") {
+                window.open("Travel stresses.html");
+            }
+            else if ( str == "Heart"){
+                window.open("Travel stresses.html");
+            }
+            else if ( str == "Blood"){
+                window.open("Travel stresses.html");
+            }
+            else if ( str == "Muscles"){
+                window.open("Travel stresses.html");
+            }
+            else if ( str == "Skin"){
+                window.open("Travel stresses.html");
+            }
+            else if ( str == "travel stresses"){
+                window.open("Travel stresses.mp4");
+            }
+            else if ( str == "Trip in space"){
+                window.open("nasa.mp4");
+            }
+            else if ( str == "Saturn run"){
+                window.open("Coming soon.html");
+            }
+            else if ( str == "Fight rocks"){
+                window.open("Game.html");
+            }
+            else {
+                alert("The input you searched for is unavaliable")
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars" onclick="show_hide()"></i>
+            </label>
+            <label class="logo">
+                <img class="pageLogo" src="img/logo.png" alt="Page Logo">
+            </label>
+                <ul>
+                <li id="one"><a class="active" href="#" >Home</a></li>
+                <div class="dropdown">
+                    <li id="two"><a href="#" class="dropbtn" >Table of content</a></li>
+                    <div class="dropdown-content">
+                        <a href="Travel stresses.html">Travel stresses</a>
+                        <a href="The varstaile.html"> The Versatile</a>
+                        <a href="Videos.html">Videos</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <li id="three"> <a href="#" >Games</a></li>
+                    <div class="dropdown-content">
+                        <a href="Game.html" target="_blank">Fight rocks</a>
+                        <a href="Coming soon.html" target="_blank">Saturn run</a>
+                    </div>
+                </div>
+                <li id="four"><a href="Team.html" >Team</a></li>
+                <li class="five">
+                    <input type="search" placeholder="Search..." list="input" id="Search" >
+                    <i class="fa fa-search" aria-hidden="true" class="S_img"  onclick="OpenWeb()"></i>
+                    <datalist id="input">
+                        <option value="Travel stresses" onclick="OpenWeb()">article</option>
+                        <option value="Heart" onclick="OpenWeb()">article</option>
+                        <option value="Blood" onclick="OpenWeb()">article</option>
+                        <option value="Muscles" onclick="OpenWeb()">article</option>
+                        <option value="Skin" onclick="OpenWeb()">article</option>
+                        <option value="travel stresses" onclick="OpenWeb()">video</option>
+                        <option value="Trip in space"  onclick="OpenVideo()">video</option>
+                        <option value="Saturn run"  onclick="OpenVideo()">Game</option>
+                        <option value="Fight rocks"  onclick="OpenVideo()">Game</option>
+                    </datalist>
+                    
+                </li>
+                </div>
+                </ul>
+            </div>
+          </nav>
+        <section class="hero" id="Hide">
+            <div class="cta container">
+                <div class="left-section">
+                    <h1>
+                        
+                        Hello my friends! I'm the versatile, I'm a superhero that has unique features that enables me to overcome stresses in space. Let's explore the space together! </h1>
+                    <button class="btn btn-primary" onclick="OpenVideo()">Explore Space</button>
+                </div>
+                <div class="right-section">
+                    <img src="img/logo.png" alt="astronaut">
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
